@@ -1,0 +1,55 @@
+.introducao-bg {
+    background-color: #FBEAEB;
+}
+
+.introducao-conteudo {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: center;
+    padding-top: 24px;
+}
+
+.introducao-texto {
+    padding-top: 60px;
+}
+
+.introducao-texto p {
+    font-weight: 400;    
+}
+
+.introducao-texto p:first-of-type {
+    position: relative;
+    padding-left: 48px;
+}
+
+.introducao-texto p:first-of-type::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0.6%;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 4px;
+    background-color: #2F3C7E;
+}
+
+.titulo1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 4rem;
+    line-height: 5.2rem;    
+    margin-bottom: 8px;
+    margin-top: 8px;    
+}
+
+.introducao-conteudo img {
+    padding-left: 48px;
+}
+
+.introducao-texto span {
+    font-weight: 600;
+}
+
+.descricao {
+    margin-top: 32px;
+}
