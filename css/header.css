@@ -1,0 +1,61 @@
+.header-bg {
+    background-color: #FBEAEB;
+}
+
+.header-conteudo {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav {
+    display: flex;
+    gap: 32px;
+}
+
+.icone-github {
+    width: 27.13px;
+    height: 28px;
+    transition: 0.2s ease-in-out;
+}
+
+.icone-linkedin {
+    width: 24.5px;
+    height: 28px;
+    transition: 0.2s ease-in-out;
+}
+
+.icone-github:hover, .icone-linkedin:hover {
+    transform: scale(1.2);
+}
+
+.icone-carrinho1 {
+    width: 28px;
+    height: 28px;
+    transition: 0.2s ease-in-out;
+    transform: scaleX(-1);
+    filter: invert();
+}
+
+.icone-carrinho1-div {
+    position: relative;
+    cursor: pointer;
+}
+
+.quantidade-carrinho {
+    position: absolute;
+    background-color: #2F3C7E;
+    color: white;
+    font-size: 12px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    padding: 4px 4px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -8px;
+    left: 20px;
+}
