@@ -1,7 +1,7 @@
 .carrinho-compras {
     position: fixed;
     top: 0;
-    right: 0;
+    right: -100%;
     background: #FBEAEB;
     width: 412px;
     height: 91vh;

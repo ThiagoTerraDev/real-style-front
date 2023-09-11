@@ -18,7 +18,7 @@ export default function fetchFakestoreProducts() {
                                 <h2 class="produto-titulo">${response[i].title}</h2>
                                 <div class="produto-preco-container">
                                     <h3 class="produto-preco">$${response[i].price}</h3>
-                                    <span data-produtoId="${response[i].id}" class="add-cart"></span>
+                                    <span data-produtoId="${response[i].id}" class="add-carrinho"></span>
                                 </div>
                             </div>
                         `;
