@@ -1,3 +1,8 @@
+// Esta função precisa ser chamada somente após o carregamento completo do conteúdo da página.
+
+import { handleClickAddCarrinho } from "./adicionar-ao-carrinho.js";
+
+
 // Função para carregar dados da API externa "Fakestore API"
 
 export default function fetchFakestoreProducts() {
@@ -23,10 +28,11 @@ export default function fetchFakestoreProducts() {
                             </div>
                         `;
                     };
-                };           
+                }; 
+                handleClickAddCarrinho();        
             }
             catch(err) {
-                console.log(err)
+                console.log(err);
             };
         };
         fetchProducts('https://fakestoreapi.com/products');
