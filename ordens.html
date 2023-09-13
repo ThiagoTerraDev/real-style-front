@@ -33,45 +33,42 @@
                         <a href="https://www.linkedin.com/in/thiago-terra-158a71266/" target="_blank">
                             <img src="./img/linkedin-in.svg" width="448" height="512" alt="Icone LinkedIn" class="icone-linkedin">
                         </a> 
-                    </li>
-                    <li>
-                        <div class="carrinho-sidebar">
-                            <img src="./img/shopping-cart.svg" width="800" height="800" alt="Icone Carrinho" class="icone-carrinho1">
-                            <span class="quantidade-carrinho">0</span>
-                        </div>
-                    </li>
-                </ul>
-                <div class="carrinho-compras">
-                    <h2 class="titulo-carrinho">Your Cart</h2>
-                    <div class="produtos-carrinho">                        
-                    </div>
-                    <div class="total-carrinho">
-                        <span class="total-titulo">Total</span>
-                        <span class="total-preco">$0</span>
-                    </div>
-                    <button type="button" class="botao-comprar">Buy Now</button>
-                    <a href="ordens.html" class="link-ordens">Manage your orders</a>
-                    <img src="./img/close-icon.svg" alt="Botão Fechar" id="fechar-carrinho">
-                </div>
+                    </li>                    
+                </ul>                
             </nav>
         </div>
     </header>
 
-    <main class="introducao-bg">
-        <div class="introducao-conteudo container2">
-            <div class="introducao-texto">
-                <p>NEW TRENDS</p>
-                <h1 class="titulo1">EXCLUSIVE ITEMS FOR <span>AUTHENTIC PEOPLE.</span></h1>
-                <p class="descricao">Fashion is expression, it is art, it is a way of telling your story without using words.</p>
-            </div>
-            <img src="./img/modelo-real-style.png" width="152.25" height="552" alt="modelo homem">
-        </div>
-    </main>
+    <main class="ordens-bg">
 
-    <section>
-        <div class="produtos container1">
+        <div class="container2">
+            <div class="header-ordens">
+                <h2>My orders</h2>
+                <form id="formulario-busca">
+                    <input type="text" id="input-busca" placeholder="Search by product">
+                    <button type="submit" class="buscar-produto">Search</button>
+                </form>
+            </div>
+
+            <div id="resultado-busca">
+                <!-- Aqui será exibido o resultado da pesquisa -->
+            </div>
+
+            <div class="div-tabela">
+                <table id="ordens-tabela">
+                    <tr>
+                        <th>Produto</th>
+                        <th>Quantidade</th>
+                        <th>Valor unitário</th>                        
+                        <th class="acao">Editar</th>
+                        <th class="acao">Excluir</th>
+                    </tr>
+                </table>
+            </div>
         </div>
-    </section>
+
+    </main>
+   
 
     <footer>
         <p>Real Style © Some rights reserved.</p>
