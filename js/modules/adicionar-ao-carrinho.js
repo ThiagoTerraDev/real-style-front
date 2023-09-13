@@ -1,10 +1,13 @@
+import { quantidadeProdutoCarrinho, removerProdutoCarrinho, atualizarTotal } from "./carrinho-operacoes.js";
+
+
 export function handleClickAddCarrinho() {
     const botaoAddCarrinho = document.getElementsByClassName('add-carrinho');
     
     for (var i = 0; i < botaoAddCarrinho.length; i++) {
         let botao = botaoAddCarrinho[i]
         botao.addEventListener('click', coletarInfosProduto);       
-    };   
+    };    
 };
 
 function coletarInfosProduto(event) {
@@ -15,6 +18,7 @@ function coletarInfosProduto(event) {
     let precoProduto = produtoInfos.getElementsByClassName('produto-preco')[0].innerText;
     let imagemProduto = produtoInfos.getElementsByClassName('produto-img')[0].src;
     addProdutoCarrinho(tituloProduto, precoProduto, imagemProduto);
+    atualizarTotal();
 };
 
 function addProdutoCarrinho(tituloProduto, precoProduto, imagemProduto) {
@@ -41,4 +45,7 @@ function addProdutoCarrinho(tituloProduto, precoProduto, imagemProduto) {
     
     produtoCarrinhoBox.innerHTML = carrinhoBoxConteudo;
     produtosCarrinho.append(produtoCarrinhoBox);
+
+    quantidadeProdutoCarrinho();
+    removerProdutoCarrinho();
 }
