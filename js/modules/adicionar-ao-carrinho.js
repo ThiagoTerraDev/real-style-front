@@ -1,5 +1,6 @@
 import { quantidadeProdutoCarrinho, removerProdutoCarrinho, atualizarTotal } from "./carrinho-operacoes.js";
 import atualizarNumeroCarrinho from "./atualizar-numero-carrinho.js";
+import comprarProdutos from "./botao-comprar.js";
 
 
 export function handleClickAddCarrinho() {
@@ -51,5 +52,7 @@ function addProdutoCarrinho(tituloProduto, precoProduto, imagemProduto) {
 
     quantidadeProdutoCarrinho();
     removerProdutoCarrinho();
-    atualizarNumeroCarrinho()
+    atualizarNumeroCarrinho();    
 };
+
+comprarProdutos();
