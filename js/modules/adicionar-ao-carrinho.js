@@ -1,4 +1,5 @@
 import { quantidadeProdutoCarrinho, removerProdutoCarrinho, atualizarTotal } from "./carrinho-operacoes.js";
+import atualizarNumeroCarrinho from "./atualizar-numero-carrinho.js";
 
 
 export function handleClickAddCarrinho() {
@@ -18,7 +19,7 @@ function coletarInfosProduto(event) {
     let precoProduto = produtoInfos.getElementsByClassName('produto-preco')[0].innerText;
     let imagemProduto = produtoInfos.getElementsByClassName('produto-img')[0].src;
     addProdutoCarrinho(tituloProduto, precoProduto, imagemProduto);
-    atualizarTotal();
+    atualizarTotal();    
 };
 
 function addProdutoCarrinho(tituloProduto, precoProduto, imagemProduto) {
@@ -32,7 +33,9 @@ function addProdutoCarrinho(tituloProduto, precoProduto, imagemProduto) {
             alert('You have already add this item to cart!');
             return;
         }
-    }
+    };
+
+    alert("Product added to cart!")
 
     let carrinhoBoxConteudo = `
         <img src="${imagemProduto}" alt="" class="produto-carrinho-img">
@@ -48,4 +51,5 @@ function addProdutoCarrinho(tituloProduto, precoProduto, imagemProduto) {
 
     quantidadeProdutoCarrinho();
     removerProdutoCarrinho();
-}
+    atualizarNumeroCarrinho()
+};

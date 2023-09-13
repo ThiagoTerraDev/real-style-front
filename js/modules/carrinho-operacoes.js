@@ -1,3 +1,5 @@
+import atualizarNumeroCarrinho from "./atualizar-numero-carrinho.js";
+
 export function quantidadeProdutoCarrinho() {
 
     let quantidadeInputs = document.getElementsByClassName('produto-carrinho-quantidade');
@@ -13,6 +15,7 @@ export function quantidadeProdutoCarrinho() {
             input.value = 1;
         };
         atualizarTotal();
+        atualizarNumeroCarrinho();
     };
 };
 
@@ -30,8 +33,9 @@ export function removerProdutoCarrinho() {
         let botaoClicado = event.target;
         botaoClicado.parentElement.remove();
         atualizarTotal();
+        atualizarNumeroCarrinho()
     }
-}
+};
 
 
 export function atualizarTotal() {
