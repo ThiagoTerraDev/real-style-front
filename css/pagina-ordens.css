@@ -4,3 +4,17 @@
     padding-top: 40px;
     padding-bottom: 20px;
 }
+
+.container3 {
+    max-width: 1200px;    
+    margin: 0 auto;    
+    padding: 20px 40px 40px 40px;
+    min-height: 500px;
+    background-color: #fff;
+    border-radius: 8px;    
+}
+
+#ordens-tabela {
+    width: 100%;
+    text-align: center;
+}
