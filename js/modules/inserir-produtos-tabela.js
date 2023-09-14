@@ -1,3 +1,5 @@
+import criarBotaoEditar from "./botao-editar-ordens.js";
+
 let indexLinha = 0;
 
 // Função para inserir produtos na tabela apresentada na página de ordens.
@@ -13,4 +15,6 @@ export default function inserirProdutosTabela(tituloProduto, quantidadeProduto, 
         let celulas = linha.insertCell(i);
         celulas.textContent = produto[i];
     };    
+
+    criarBotaoEditar(linha.insertCell(-1));
 };

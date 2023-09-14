@@ -18,3 +18,9 @@
     width: 100%;
     text-align: center;
 }
+
+.botao-editar {
+    max-width: 20px;
+    cursor: pointer;
+    padding-top: 4px;
+}
