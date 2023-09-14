@@ -1,4 +1,4 @@
-import removerProdutoBase from "./remover-produto-base.js";
+import removerProdutoTabela from "./remover-produto-base.js";
 
 
 // Função para criar um botão de remoção, para cada linha da tabela
@@ -12,5 +12,5 @@ export default function criarBotaoRemover(parent) {
 
     parent.appendChild(botaoRemover);
 
-    botaoRemover.addEventListener('click', removerProdutoBase);
+    botaoRemover.addEventListener('click', removerProdutoTabela);
 };
