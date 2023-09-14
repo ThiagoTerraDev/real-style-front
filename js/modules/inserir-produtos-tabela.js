@@ -1,4 +1,5 @@
 import criarBotaoEditar from "./botao-editar-ordens.js";
+import criarBotaoRemover from "./botao-remover-ordens.js";
 
 let indexLinha = 0;
 
@@ -17,4 +18,5 @@ export default function inserirProdutosTabela(tituloProduto, quantidadeProduto, 
     };    
 
     criarBotaoEditar(linha.insertCell(-1));
+    criarBotaoRemover(linha.insertCell(-1));
 };

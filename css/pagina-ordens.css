@@ -19,7 +19,7 @@
     text-align: center;
 }
 
-.botao-editar {
+.botao-editar, .botao-remover {
     max-width: 20px;
     cursor: pointer;
     padding-top: 4px;
