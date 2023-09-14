@@ -1,3 +1,5 @@
+import inserirProdutosTabela from "./inserir-produtos-tabela.js";
+
 // Função para obter a lista de produtos cadastrados na base, via requisição GET
 export default async function buscarProdutos() {
     try {
@@ -7,7 +9,8 @@ export default async function buscarProdutos() {
         });
         const data = await response.json();
 
-        console.log(data)
+        // Assim que a lista é obtida, os produtos são inseridos na tabela da página de ordens.
+        data.produtos.forEach((produto) => inserirProdutosTabela(produto.nome, produto.quantidade, produto.valor_unitario));        
 
     } catch (error) {
         console.log('Error', error)
