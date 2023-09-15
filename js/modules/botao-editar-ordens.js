@@ -1,3 +1,6 @@
+import { salvarNovaQuantidade } from "./editar-produto-base.js";
+
+
 // Função para criar um botão de edição, para cada linha da tabela
 // na página de ordens.
 
@@ -31,6 +34,8 @@ function abrirModalEditar() {
     const nomeProduto = linhaRespectiva.getElementsByTagName('td')[0].innerText;    
     const nomeProdutoModal = document.getElementsByClassName('nome-produto-modal')[0];    
     nomeProdutoModal.innerText = nomeProduto;
+
+    salvarNovaQuantidade();
 };
 
 
