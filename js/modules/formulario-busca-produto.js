@@ -1,3 +1,6 @@
+import buscarProduto from "./buscar-produto-base.js";
+
+
 // Função para definir o termo de busca, ou seja, o produto cadastrado
 // na base que está sendo pesquisado na tabela de ordens.
 
@@ -25,7 +28,9 @@ export default function definirTermoBusca() {
                     linha.style.display = 'none';
                 };
             };
-                        
+            
+            buscarProduto(termoDeBusca); 
+
         } else {
             alert('Text area cannot be empty!');
         };
