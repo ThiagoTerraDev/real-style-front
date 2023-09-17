@@ -28,3 +28,23 @@ https://1drv.ms/i/s!AvTc9X8DiWmVj_MvyWRtPXuzk9SUHA?e=R1WWPD
 ## Como executar
 
 Basta clonar o repositório (ou fazer o download do projeto) e abrir o arquivo index.html no seu browser.
+
+---
+
+## Como executar através do Docker
+
+Certifique-se de ter o [Docker](https://docs.docker.com/engine/install/) instalado e em execução em sua máquina.
+
+Navegue até o diretório que contém o Dockerfile no terminal. Execute como administrador o seguinte comando para construir a imagem Docker:
+
+```
+$ docker build -t nome_da_sua_imagem .
+```
+
+Uma vez criada a imagem, para executar o container basta executar, **como administrador**, o seguinte comando:
+
+```
+$ docker run -d -p 8080:80 nome_da_sua_imagem
+```
+
+Uma vez executando, para acessar o front-end, basta abrir o [http://localhost:8080/#/](http://localhost:8080/#/) no navegador.
