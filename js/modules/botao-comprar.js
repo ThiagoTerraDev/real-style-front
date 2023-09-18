@@ -5,17 +5,21 @@ export default function comprarProdutos() {
     botaoComprar.addEventListener('click', selecionarProduto);
   
     function selecionarProduto() {
-        
-        for (let i = 0; i < produtoCarrinhoBox.length; i++) {
-            const tituloProduto = produtoCarrinhoBox[i].getElementsByClassName('produto-carrinho-titulo')[0].innerText;
-            const quantidadeProduto = produtoCarrinhoBox[i].getElementsByClassName('produto-carrinho-quantidade')[0].value;
-            const precoProduto = produtoCarrinhoBox[i].getElementsByClassName('produto-carrinho-preco')[0].innerText;
-            const precoProdutoDefinitivo = parseFloat(precoProduto.replace('$', ''));
 
-            // Ativando a função para cadastrar produtos na base de dados.
-            postItem(tituloProduto, quantidadeProduto, precoProdutoDefinitivo);            
-        };
-        alert('Your order has been sent!')      
+        if (produtoCarrinhoBox.length > 0) {
+            for (let i = 0; i < produtoCarrinhoBox.length; i++) {
+                const tituloProduto = produtoCarrinhoBox[i].getElementsByClassName('produto-carrinho-titulo')[0].innerText;
+                const quantidadeProduto = produtoCarrinhoBox[i].getElementsByClassName('produto-carrinho-quantidade')[0].value;
+                const precoProduto = produtoCarrinhoBox[i].getElementsByClassName('produto-carrinho-preco')[0].innerText;
+                const precoProdutoDefinitivo = parseFloat(precoProduto.replace('$', ''));
+    
+                // Ativando a função para cadastrar produtos na base de dados.
+                postItem(tituloProduto, quantidadeProduto, precoProdutoDefinitivo);            
+            };
+            alert('Your order has been sent!')      
+        } else {
+            alert('Your cart is empty!')
+        };        
     };       
 };
 
