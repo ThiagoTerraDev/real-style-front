@@ -26,6 +26,10 @@
     padding-left: 8px;    
 }
 
+#input-busca {
+    width: 236px;
+}
+
 #ordens-tabela {
     width: 100%;
     text-align: center;    
