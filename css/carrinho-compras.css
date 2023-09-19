@@ -110,3 +110,52 @@
     right: 0.8rem;
     cursor: pointer;
 }
+
+/* Carrinho de Compras Responsivo */
+
+@media (max-width: 600px) {
+    .carrinho-compras {
+        width: 240px;
+        z-index: 1;
+    }
+
+    .titulo-carrinho {
+        font-size: 1.6rem;
+        margin-top: 2.8rem;
+    }
+
+    .produto-carrinho-box {
+        margin-top: 1rem;
+        margin-bottom: 1.6rem;
+    }    
+
+    .produto-carrinho-titulo, .produto-carrinho-preco {
+        font-size: 0.8rem;
+    }
+       
+    .produto-carrinho-img {
+        width: 52px;        
+    }
+    
+    .produto-carrinho-quantidade {
+        width: 2.6rem;       
+    }
+    
+    .icone-lixeira {        
+        width: 20px;
+    }
+
+    .total-titulo, .total-preco {
+        font-size: 0.8rem;
+    }
+
+    .botao-comprar {        
+        padding: 8px 20px;        
+        font-size: 1.2rem;  
+        margin: 2.4rem auto 1rem;           
+    }
+        
+    .link-ordens {
+        font-size: 0.7rem;
+    }
+}

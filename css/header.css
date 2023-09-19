@@ -60,3 +60,43 @@
     top: -8px;
     left: 20px;
 }
+
+/* Header Responsivo */
+
+@media (max-width: 600px) {
+    .logo {
+       width: 121px;
+       height: 18px;
+    }
+
+    .header-conteudo {
+        padding-top: 16px;
+    }
+    
+    .header-nav {        
+        gap: 20px;
+    }
+    
+    .icone-github {
+        width: 20.13px;
+        height: 21px;        
+    }
+    
+    .icone-linkedin {
+        width: 17.5px;
+        height: 21px;        
+    }   
+    
+    .icone-carrinho1 {
+        width: 21px;
+        height: 21px;        
+    }
+
+    .quantidade-carrinho {
+        font-size: 10px;
+        width: 6px;
+        height: 6px;        
+        left: 15px;
+        top: -10px;
+    }
+}

@@ -53,3 +53,49 @@
 .descricao {
     margin-top: 32px;
 }
+
+/* Introdução Responsivo */
+
+@media (max-width: 1000px) {
+    .introducao-texto p:first-of-type {
+        font-size: 0.8rem;
+    }
+    
+    .titulo1 {
+        font-size: 3rem;
+        line-height: 4.2rem; 
+    }
+
+    .descricao {
+        width: 380px;
+    } 
+}
+
+@media (max-width: 600px) {
+    .introducao-conteudo {
+        display: block;        
+        justify-items: center;
+        padding-top: 0px;
+        padding-bottom: 40px;
+    }
+    
+    .introducao-texto p:first-of-type {
+        font-size: 0.7rem;
+        padding-left: 44px;
+    }
+    
+    .titulo1 {
+        font-size: 1.8rem;
+        line-height: 2.8rem; 
+    }
+
+    .descricao {
+        width: 280px;
+        font-size: 0.8rem;
+        margin-top: 24px;
+    }
+    
+    .introducao-conteudo img {
+        display: none;
+    }
+}

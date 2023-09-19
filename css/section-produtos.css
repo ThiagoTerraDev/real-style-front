@@ -64,3 +64,52 @@ section {
     border-radius: 6px;
     cursor: pointer;
 }
+
+/* Section Produtos Responsivo */
+
+@media (max-width: 1000px) {
+    .produtos {        
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px;
+    }
+
+    .produtos img {
+        width: 32%;
+    }
+}
+
+@media (max-width: 600px) {
+    .produtos {        
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        width: 300px;        
+    }
+
+    .produtos img {
+        width: 28%;
+    }      
+
+    .produto-preco {
+        font-size: 0.8rem;
+    }
+    
+    .produto-titulo, .produto-categoria, .produto-preco-container {
+        padding: 1rem 3.2rem 0 3.2rem;    
+    }
+
+    .produto-titulo {    
+        font-size: 1rem;
+        padding-top: 4px;
+    }
+    
+    .produto-preco-container {
+        justify-content: center;
+        gap: 72px;
+        padding-top: 16px;        
+    }
+
+    .add-carrinho {
+        width: 1.6rem;
+        height: 1.6rem;           
+    }
+}

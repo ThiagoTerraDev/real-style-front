@@ -63,3 +63,15 @@
     margin-left: 4px;
     background-color: #2F3C7E;
 }
+
+/* Modal Editar Quantidade Responsivo */
+
+@media (max-width: 600px) {
+    .modal-edicao {        
+        width: 220px;            
+    }      
+    
+    .fechar-modal, #botao-salvar-modal {        
+        margin-left: 4px;
+    }
+}

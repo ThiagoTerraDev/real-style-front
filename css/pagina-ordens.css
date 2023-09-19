@@ -1,6 +1,6 @@
 .ordens-bg {
     background-color: #FBEAEB;
-    min-height: 90vh;
+    min-height: 85vh;
     padding-top: 40px;
     padding-bottom: 20px;
 }
@@ -50,4 +50,63 @@
     cursor: pointer;
     padding-top: 4px;
     display: inline-block;      
+}
+
+/* Página de Ordens Responsivo */
+
+@media (max-width: 1000px) {
+    .ordens-bg { 
+        min-height: 90vh;
+        padding-top: 14px;
+    }
+    
+    .container3 {
+        border-radius: 0px;
+    }
+}
+
+@media (max-width: 600px) {
+    .ordens-bg {        
+        padding-bottom: 80px;
+    }
+    
+    .container3 {
+        max-width: 540px;
+        padding: 40px 20px;
+        display: grid;
+        justify-items: center;   
+    }    
+    
+    .header-ordens {        
+        display: grid;
+        justify-items: center;
+        gap: 16px;
+    }
+    
+    .header-ordens h2 {
+        font-size: 1.8rem;            
+    }
+    
+    #input-busca {
+        width: 168px;
+    }     
+    
+    #ordens-tabela th, #ordens-tabela td {
+        padding: 4px;        
+    }
+
+    #ordens-tabela th {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+
+    #ordens-tabela td {
+        font-size: 0.71rem;
+        padding-top: 16px;
+        padding-bottom: 12px;
+    }
+    
+    .botao-editar, .botao-remover {
+        max-width: 16px;             
+    }
 }
