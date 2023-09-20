@@ -23,6 +23,17 @@ a {
     font-weight: 600;
 }
 
+#overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
+}
+
 .container1 {
     max-width: 1400px;
     padding-left: 20px;
