@@ -59,9 +59,17 @@
     background-color: #6e6e6e;
 }
 
+.fechar-modal:hover {
+    background-color: #7e7e7e;
+}
+
 #botao-salvar-modal {
     margin-left: 4px;
     background-color: #2F3C7E;
+}
+
+#botao-salvar-modal:hover {
+    background-color: #2f3c7eda;
 }
 
 /* Modal Editar Quantidade Responsivo */
